@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "March 1, 2023 | June 12, 2023",
+    title: "Full-Stack Developer",
+    company: "PAETA",
+    description:
+      "In charge of developing the PAETA application for the Agropecuario San Carlos School. I led the integration of a relational database in conjunction with the Flask web framework, culminating in the effective implementation of the application on a local server to facilitate internal communication and optimize system operability.",
+    link: "#projects",
+  },
+  {
+    date: "June 26, 2023 | June 30, 2023",
+    title: "Technical Internship",
+    company: "Golabs",
+    description:
+      "During my internship at Golabs, I focused on testing popular Headless CMSs such as Strapi and Contentful, as well as their integration with the Next.js framework. This internship allowed me to acquire communication skills and participate effectively in team projects.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

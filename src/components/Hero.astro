@@ -1,0 +1,51 @@
+---
+import SocialPill from "./SocialPill.astro";
+import MailIcon from "./Icons/MailIcon.astro";
+import LinkedInIcon from "./Icons/LinkedInIcon.astro";
+import GitHub from "./Icons/GitHub.astro";
+
+---
+
+<div class=" h-full flex">
+    <div class="w-screen">
+            <div class="mb-10">
+            <h1 class="text-xl md:text-6xl font-bold text-secondary my-2">Juan D. Matute</h1>
+            <h1 class="text-xl px-2 md:text-4xl font-bold  text-gray my-2 text-center ">Backend <br class="block md:hidden"> Developer</h1>
+            <hr class="h-1  md:block bg-primary mt-5">
+        </div>
+        
+
+        <div class="">
+            <p class="text-sm md:text-lg text-secondary ">I am a backend developer with experience in the development of web applications, I have knowledge in the development of APIs, databases, and the use of different programming languages.</p>
+        </div>
+    </div>
+    <div class="w-screen my-2 h-fit">
+        <div class="w-1/2 h-1/2 m-auto">
+            <img src="/perfil.png" alt="Logo" class="w-full h-full">
+        </div>
+        
+        <ul class="flex flex-wrap justify-center mt-3 text-sm font-medium sm:mt-0">
+            <li class="m-2">
+                <SocialPill href="mailto:juandiegomatute11@gmail.com">
+                    <MailIcon class="size-4" />
+                    <span >Email</span>
+                </SocialPill>
+            </li>
+            <li class="md:mt-2">
+                <SocialPill href="https://github.com/JDMatu">
+                    <GitHub class="size-4" />
+                    <span >GitHub</span>
+                </SocialPill>
+            </li>
+            <li class="m-2">
+                <SocialPill href="https://www.linkedin.com/in/matudev/">
+                    <LinkedInIcon class="size-4" />
+                    <span >LinkedIn</span>
+                </SocialPill>
+            </li>
+        </ul>
+    </div>
+
+
+
+</div>

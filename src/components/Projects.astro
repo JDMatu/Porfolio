@@ -1,0 +1,65 @@
+---
+import Card from "./Card.astro";
+import Tailwind from "./Icons/Tailwind.astro";
+import Python from "./Icons/Python.astro";
+
+
+
+
+
+
+const TAGS = {
+  Python: {
+    name: "Python",
+    class: "bg-[#FFFF0040] text-white",
+    icon: Python,
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind,
+  },
+}
+
+---
+
+<div class="flex flex-col gap-y-16">
+    
+    <Card  
+        title="SmartCoop"
+        description="Una aplicación web que permite a los usuarios gestionar sus proyectos de forma colaborativa. Los usuarios pueden crear proyectos, añadir tareas, asignarlas a otros usuarios y ver el progreso de las tareas. La aplicación también cuenta con un chat en tiempo real para que los usuarios puedan comunicarse entre ellos."
+        image="/files/smartcoop.png" 
+        tags={
+            [
+                TAGS.Python,
+                TAGS.TAILWIND
+            ]
+
+        }
+        link=""
+        github=""
+        ClassName="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0"
+    
+    
+    />
+
+    <Card  
+        title="Paeta"
+        description="Una aplicación web que permite a los usuarios gestionar sus proyectos de forma colaborativa. Los usuarios pueden crear proyectos, añadir tareas, asignarlas a otros usuarios y ver el progreso de las tareas. La aplicación también cuenta con un chat en tiempo real para que los usuarios puedan comunicarse entre ellos."
+        image="/files/smartcoop.png" 
+        tags={
+            [
+                TAGS.Python,
+                TAGS.TAILWIND
+            ]
+
+        }
+        link="https:"
+        github="https://github.com/jdmatu/paeta"
+        ClassName="flex flex-col space-x-0 space-y-8 group md:flex-row-reverse md:space-x-8 md:space-y-0"
+    
+    
+    />
+
+
+</div>
