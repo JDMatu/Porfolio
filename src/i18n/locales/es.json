@@ -1,0 +1,106 @@
+{
+    "Hero":{
+        "specialization":"Desarrollador Backend",
+        "description":"Soy un desarrollador backend con experiencia en el desarrollo de aplicaciones web, tengo conocimientos en el desarrollo de APIs, bases de datos y el uso de diferentes lenguajes de programación."
+    },
+    "Info":{
+        "phrase1":"La verdad solo se puede encontrar en un lugar:",
+        "phrase2":"El código"
+    },
+    "Experience":{
+        "title":"Experiencia Laboral",
+        "1":{
+            "date": "1 de marzo de 2023 | 12 de junio de 2023",
+            "title": "Desarrollador Full-Stack",
+            "company": "PAETA",
+            "description":
+              "Encargado de desarrollar la aplicación PAETA para el Colegio Agropecuario San Carlos. Lideré la integración de una base de datos relacional en conjunto con el framework web Flask, culminando en la efectiva implementación de la aplicación en un servidor local para facilitar la comunicación interna y optimizar la operabilidad del sistema.",
+            "link": "#projects"
+          },
+        "2":
+          {
+            "date": "26 de junio de 2023 | 30 de junio de 2023",
+            "title": "Pasantía Técnica",
+            "company": "Golabs",
+            "description":
+              "Durante mi pasantía en Golabs, me enfoqué en probar populares CMS Headless como Strapi y Contentful, así como su integración con el framework Next.js. Esta pasantía me permitió adquirir habilidades de comunicación y participar efectivamente en proyectos en equipo."
+          },
+        "Course":"Formación | Cursos",
+        "more":"Ver más en mi perfil de LinkedIn"
+    },
+    "Projects":{
+        "title":"Proyectos",
+        "description1":"Un software especializado para cooperativas, brindando acceso a tres tipos de usuarios, permitiendo el acceso a una amplia gama de información relacionada con la cooperativa. Facilita las actividades de una manera más ágil y eficiente a través del uso de la tecnología. El software incluye múltiples módulos como ventas, votaciones, actividades, calendario... El administrador se beneficia de un panel altamente interactivo e intuitivo para una mejor gestión de la cooperativa.",
+        "description2":"Un software especializado para el Colegio Agropecuario San Carlos, diseñado para subir videos educativos relacionados con los departamentos del colegio. El software cuenta con un panel administrativo que permite la gestión de los videos de la plataforma. Además, permite la categorización distintiva de videos y la creación de nuevas cuentas de usuario. El software está diseñado para facilitar el proceso de aprendizaje de estudiantes y profesores, brindando una experiencia de aprendizaje más interactiva y dinámica.",
+        "smartcoop":{
+            "text1_title":"Problemática",
+            "text1":
+            "SmartCoop nació de la necesidad. Mientras estaba en mi escuela, noté la gestión ineficiente de las cooperativas. Carecían de cualquier sistema para ayudar con la documentación o la interacción entre los asociados. Decidí poner fin a este problema, y así nació SmartCoop.",
+            "text2_title":"Descripción",
+            "text2":
+            "Una aplicación web que optimiza las tareas tanto para los administradores de cooperativas como para sus asociados. El software ofrece varios módulos, incluyendo ventas, votaciones, eventos y contabilidad. Todos estos módulos y más son gestionados por el administrador desde una plantilla separada en comparación con los asociados. Esto les permite tener un control total sobre el sistema con una interfaz muy simple e intuitiva.",
+            "text3_title":"Tecnologías",
+            "text3":"Este proyecto fue desarrollado utilizando las siguientes tecnologías:",
+            "text4_title":"Nota",
+            "text4":
+            "Este software no está disponible públicamente, ya que reservamos todos los derechos sobre su creación. Sin embargo, si estás interesado en obtener más información sobre el proyecto y explorar más allá de las imágenes proporcionadas, no dudes en contactarme, y con gusto te proporcionaré más información sobre el proyecto.",
+            "text5_title":"Administrador",
+            "text5":
+            "El usuario administrador tiene acceso a un panel de control especializado que les permite gestionar todos los aspectos del sistema desde un único lugar. En las siguientes imágenes, puedes echar un vistazo a cómo se ve el panel de administrador.",
+            "text6_title":"Asociado",
+            "text6":
+            "El usuario asociado tendrá acceso a un panel informativo sobre la cooperativa. También podrán votar en las elecciones de la asamblea, realizar compras y ver sus ahorros acumulados a lo largo del año. En las siguientes imágenes, puedes obtener una breve descripción general del sistema para los asociados."
+        },
+        "paeta":{
+            "text1_title":"Descripción",
+            "text1":
+            "PAETA es una aplicación web diseñada específicamente para el Colegio Agropecuario San Carlos, con el objetivo de mejorar el proceso de enseñanza para los estudiantes y proporcionar materiales didácticos para que los profesores mejoren su impartición de clases. La aplicación cuenta con autenticación de usuarios, permitiendo el registro como profesor o administrador. Este último tendrá control sobre el contenido y los permisos de la aplicación.",
+            "text2_title":"Experiencia",
+            "text2":
+            "Esta aplicación fue iniciada por un estudiante de duodécimo en el año 2022, pero fue abandonada debido a limitaciones de tiempo. En 2023, asumí el desafío de completar este proyecto, lo que me permitió aprender a utilizar el control de versiones, profundizar en el desarrollo web y obtener conocimientos sobre cómo implementar una aplicación.",
+            "text3_title":"Tecnologías",
+            "text3":"Este proyecto fue desarrollado utilizando las siguientes tecnologías:",
+            "text4_title":"Nota",
+            "text4":
+            "Esta aplicación está alojada en un servidor local en el Colegio Agropecuario San Carlos y no puede ser accedida por cualquiera. Sin embargo, el código del software es de código abierto y puede accederse a través de este enlace:",
+            "text5_title":"Administrador",
+            "text5":
+            "PAETA presenta la misma plantilla tanto para administradores como para profesores. Sin embargo, los administradores tendrán un rango más amplio de funciones, que incluyen registro de usuarios, gestión de materiales, supervisión departamental, etc. En las siguientes imágenes, puedes echar un vistazo a PAETA.",
+            "text6_title":"Asociado",
+            "text6":
+            "Los profesores podrán acceder a la aplicación, donde se les asignará un departamento según su especialización. En la aplicación, podrán ver videos proporcionados y solicitar contenido específico para sus clases."
+        }
+    },
+    "Frameworks":{
+        "title":"Frameworks y Tecnologías",
+        "1":"Lenguajes de Programación",
+        "2":"Librerías y Frameworks",
+        "3":"Herramientas y Plataformas"
+    },
+    "About":{
+        "title":"Sobre Mí",
+        "parragraph1":{
+            "1":"Mi nombre es Juan Diego Matute, tengo 18 años y soy de San Carlos. Estoy a punto de finalizar mis estudios, obteniendo un ",
+            "2":"Técnico medio en Desarrollo de Software ",
+            "3":"y un diploma de bachiller en educación diversificada."
+        },
+        "parragraph2":{
+            "1":"Me interesa el análisis de datos y el desarrollo web.",
+            "2":" Tengo habilidades en la interpretación de problemas y algoritmos matemáticos, y disfruto implementando programas que involucren el",
+            "3":"uso de Python",
+            "4":" ya que es una herramienta poderosa en el campo del ",
+            "5":"análisis de datos, gestión de datos y aprendizaje automático."
+        },
+        "parragraph3":{
+            "1":"Tengo experiencia en desarrollo web, y",
+            "2":"mi mayor logro hasta la fecha es SmartCoop, un software especializado diseñado para cooperativas.",
+            "3":" Cuenta con un catálogo completo, manejo de tres tipos de usuarios, módulos de contabilidad y módulos de ventas gestionados por administradores, junto con",
+            "4":" más de 12 páginas dinámicas."
+        } 
+    },
+    "btn":{
+        "1":"Leer Más",
+        "2":"Ver Proyectos",
+        "3":"Descargar CV"
+    }
+}

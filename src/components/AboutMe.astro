@@ -1,4 +1,9 @@
 ---
+
+import { getI18N } from "../i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
 ---
 
 <article class="flex flex-col items-center justify-center gap-8 text-secondary md:flex-row">
@@ -6,23 +11,19 @@
     class="[&>p]:mb-4 [&>p>strong]:text-primary [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty "
   >
     <p>
-      My name is Juan Diego Matute, I am 18 years old, and I am from San Carlos. 
-      I am about to finish my studies, obtaining a <strong class="italic"> Technical Degree in Software Development </strong> and 
-      a high school diploma in diversified education.
+      {i18n.About.parragraph1[1]}<strong class="italic"> {i18n.About.parragraph1[2]} </strong>{i18n.About.parragraph1[3]}
     </p>
 
     <p>
-      <strong>I am interested in data analysis and web development.</strong>
-      I have skills in interpreting problems and mathematical algorithms, 
-      and I enjoy implementing programs that involve the <strong> use of Python </strong> since 
-      it is a powerful tool in the field of <strong> data analysis, data management, and machine learning</strong>.
+      <strong>{i18n.About.parragraph2[1]}</strong>
+      {i18n.About.parragraph2[2]} 
+      <strong> {i18n.About.parragraph2[3]} </strong> 
+      {i18n.About.parragraph2[4]}
+      <strong>{i18n.About.parragraph2[5]}</strong>.
     </p>
 
     <p>
-      I have experience in web development, and <strong> my greatest achievement to date is <em class="italic">SmartCoop</em>, 
-      specialized software designed for cooperatives</strong>. It features a comprehensive catalog, 
-      handling three types of users, accounting modules, and sales modules managed by administrators, 
-      along with <strong>over 12 dynamic pages.</strong>
+      {i18n.About.parragraph3[1]}<strong> {i18n.About.parragraph3[2]} </strong>. {i18n.About.parragraph3[3]} <strong>{i18n.About.parragraph3[4]}</strong>
     </p>
   </div>
 

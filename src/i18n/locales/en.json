@@ -1,0 +1,108 @@
+{
+    "Hero":{
+        "specialization":"Backend Developer",
+        "description":"I am a backend developer with experience in the development of web applications, I have knowledge in the development of APIs, databases, and the use of different programming languages."
+    },
+    "Info":{
+        "phrase1":"The truth can only be found in one place:",
+        "phrase2":"The code"
+    },
+    "Experience":{
+        "title":"Work Experience",
+        "1":{
+            "date": "March 1, 2023 | June 12, 2023",
+            "title": "Full-Stack Developer",
+            "company": "PAETA",
+            "description":
+              "In charge of developing the PAETA application for the Agropecuario San Carlos School. I led the integration of a relational database in conjunction with the Flask web framework, culminating in the effective implementation of the application on a local server to facilitate internal communication and optimize system operability.",
+            "link": "#projects"
+          },
+        "2":
+          {
+            "date": "June 26, 2023 | June 30, 2023",
+            "title": "Technical Internship",
+            "company": "Golabs",
+            "description":
+              "During my internship at Golabs, I focused on testing popular Headless CMSs such as Strapi and Contentful, as well as their integration with the Next.js framework. This internship allowed me to acquire communication skills and participate effectively in team projects."
+          },
+        "Course":"Training | Courses",
+        "more":"See more on my LinkedIn profile"
+    },
+    "Projects":{
+        "title":"Projects",
+        "description1":"A specialized software for cooperatives, providing access to three types of users, enabling access to a wide range of cooperative-related information. It facilitates activities in a more agile and efficient manner through the use of technology. The software includes multiple modules such as sales, voting, activities, calendar... The administrator benefits from a highly interactive and intuitive panel for better management of the cooperative.",
+        "description2":"A specialized software for the Agropecuario San Carlos School, designed to upload educational videos related to the school's departments. The software features an administrative panel allowing management of the platform's videos. Additionally, it enables distinctive categorization of videos and creation of new user accounts. The software is designed to facilitate the learning process for students and teachers, providing a more interactive and dynamic learning experience",
+        "smartcoop":{
+            "text1_title":"Problem",
+            "text1":
+            "SmartCoop was born out of necessity. While at my school, I noticed the inefficient management of cooperatives. They lacked any system to help with documentation or interaction between associates. I decided to put an end to this problem, and thus SmartCoop was born.",
+            "text2_title":"Description",
+            "text2":
+            "A web application that optimizes tasks for both cooperative administrators and associates. The software offers various modules, including sales, voting, events, and accounting. All these modules and more are managed by the administrator from a separate template compared to the associates. This allows them to have full control over the system with a very simple and intuitive interface.",
+            "text3_title":"Technologies",
+            "text3":"This project was developed using the following technologies:",
+            "text4_title":"Note",
+            "text4":
+            "This software is not publicly available, as we reserve all rights to its creation. However, if you are interested in learning more about the project and exploring beyond the provided images, feel free to contact me, and I will gladly provide you with more information about the project.",
+            "text5_title":"Administrator",
+            "text5":
+            "The administrator user has access to a specialized control panel that allows them to manage all aspects of the system from a single place. In the following images, you can get a glimpse of what the administrator panel looks like.",
+            "text6_title":"Associate",
+            "text6":
+            "The associate user will have access to an informative panel about the cooperative. They will also be able to vote in assembly elections, make purchases, and view their accumulated savings throughout the year. In the following images, you can get a brief overview of the system for associates."
+        },
+        "paeta":{
+            "text1_title":"Description",
+            "text1":
+            "PAETA is a web application specifically designed for the Agropecuario San Carlos School, with the aim of improving the teaching process for students and providing teaching materials for teachers to enhance their teaching. The application features user authentication, allowing registration as a teacher or administrator. The latter will have control over the application's content and permissions.",
+            "text2_title":"Experience",
+            "text2":
+            "This application was started by an twelfth-grade student in 2022 but was abandoned due to time constraints. In 2023, I took on the challenge of completing this project, which allowed me to learn how to use version control, delve into web development, and gain knowledge on how to implement an application.",
+            "text3_title":"Technologies",
+            "text3":"This project was developed using the following technologies:",
+            "text4_title":"Note",
+            "text4":
+            "This application is hosted on a local server at the Agropecuario San Carlos School and cannot be accessed by anyone. However, the software code is open-source and can be accessed through this link:",
+            "text5_title":"Administrator",
+            "text5":
+            "PAETA features the same template for both administrators and teachers. However, administrators will have a wider range of functions, including user registration, material management, departmental supervision, etc. In the following images, you can take a look at PAETA.",
+            "text6_title":"Associate",
+            "text6":
+            "Teachers will be able to access the application, where they will be assigned to a department according to their specialization. In the application, they can view provided videos and request specific content for their classes."
+
+        }
+    },
+    "Frameworks":{
+        "title":"Frameworks & Tech",
+        "1":"Programming Languages",
+        "2":"Libraries & Frameworks",
+        "3":"Tools & Platforms"
+    },
+    "About":{
+        "title":"About Me",
+        "parragraph1":{
+            "1":"My name is Juan Diego Matute, I am 18 years old, and I am from San Carlos. I am about to finish my studies, obtaining a ",
+            "2":"Technical Degree in Software Development ",
+            "3":"and a high school diploma in diversified education."
+        },
+        "parragraph2":{
+            "1":"I am interested in data analysis and web development.",
+            "2":" I have skills in interpreting problems and mathematical algorithms, and I enjoy implementing programs that involve the",
+            "3":"use of Python",
+            "4":" since it is a powerful tool in the field of ",
+            "5":"data analysis, data management, and machine learning."
+        },
+        "parragraph3":{
+            "1":"I have experience in web development, and",
+            "2":"my greatest achievement to date is SmartCoop, specialized software designed for cooperatives.",
+            "3":" It features a comprehensive catalog, handling three types of users, accounting modules, and sales modules managed by administrators, along with",
+            "4":" over 12 dynamic pages."
+        }
+    },
+    "btn":{
+        "1":"Read More",
+        "2":"View Projects",
+        "3":"Donwload CV"
+
+    }
+}

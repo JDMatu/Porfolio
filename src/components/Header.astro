@@ -1,31 +1,44 @@
 ---
+import { getRelativeLocaleUrl } from 'astro:i18n'
+import { getLangFromUrl, useTranslations} from '../i18n/utils.ts'
+import LanguagePicker from "./LanguagePicker.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const { currentLocale } = Astro;
+
+const isInternalLink = (url) => {
+  return url.startsWith("#") || url.startsWith(`${window.location.origin}/`);
+};
 
 
 const navItems = [
   {
-    title: "Experience",
+    title: t('nav.#experience'),
     label: "experience",
-    url: "/#experience",
+    url: isInternalLink("#experience") ? "#experience" : getRelativeLocaleUrl(currentLocale, "#experience"),
+
   },
   {
-    title: "Projects",
+    title: t('nav.#projects'),
     label: "projects",
-    url: "/#projects",
+    url: isInternalLink("#projects") ? "#projects" : getRelativeLocaleUrl(currentLocale, "#projects"),
   },
   {
-    title: "Stack",
+    title: t('nav.#stack'),
     label: "stack",
-    url: "/#stack",
+    url: isInternalLink("#stack") ? "#stack" : getRelativeLocaleUrl(currentLocale, "#stack"),
   },
   {
-    title: "About me",
+    title: t('nav.#about'),
     label: "about",
-    url: "/#about",
+    url: isInternalLink("#about") ? "#about" : getRelativeLocaleUrl(currentLocale, "#about"),
   },
   {
-    title: "Contact",
+    title: t('nav.#contact'),
     label: "contact",
-    url: "/#home",
+    url: isInternalLink("#home") ? "#home" : getRelativeLocaleUrl(currentLocale, "#home"),
   },
 ]
 ---
@@ -45,8 +58,11 @@ const navItems = [
         >
           {link.title}
         </a>
+
+        
       ))
     }
+    <LanguagePicker />
   </nav>
 </header>
 

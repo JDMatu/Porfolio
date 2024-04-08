@@ -1,0 +1,48 @@
+---
+import SectionContainer from "../../components/SectionContainer.astro"
+import DetailsProject from "../../components/DetailsProject.astro"
+
+import { getI18N } from "../../i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+---
+
+<SectionContainer id="home"  class="my-3  md:my-10 text-secondary">
+    
+    <div class="">
+        <h1 class="text-center text-2xl py-6 md:text-6xl font-bold italic hover:text-primary-700 hover:underline  ">PAETA</h1>
+        <img src="/img/paeta/paeta.png" alt="Paeta" class="h-60 md:h-96 mx-auto w-fit border-2 rounded-md border-teal-100" transition:name="SmartCoop" />
+    </div>
+    <DetailsProject 
+        title="Paeta" 
+        date="2021" 
+        begint={i18n.Projects.paeta.text1_title}
+        begin={i18n.Projects.paeta.text1}
+        imageAdmin={[
+            "/img/paeta/adm/panel.png",
+            "/img/paeta/adm/add_material.png",
+            "/img/paeta/adm/depart.png",
+            "/img/paeta/adm/edit_video.png",
+            "/img/paeta/adm/temas.png",
+            
+        ]}
+        imageAsociado={[
+            "/img/paeta/aso/login.png",
+            "/img/paeta/aso/agro.png",
+            "/img/paeta/aso/turismo.png",
+            "/img/paeta/aso/info.png",
+            "/img/paeta/aso/agroin.png",
+        ]}
+        descriptiont={i18n.Projects.paeta.text2_title}
+        description={i18n.Projects.paeta.text2}
+        adminData={i18n.Projects.paeta.text5}
+        asociadoData={i18n.Projects.paeta.text6}
+        />
+        
+        <div class="w-full md:w-1/2 md:mt-10">
+            <h1 class="text-primary">{i18n.Projects.paeta.text4_title}</h1>
+            <p>{i18n.Projects.paeta.text4}</p>
+        </div>
+
+    </SectionContainer>

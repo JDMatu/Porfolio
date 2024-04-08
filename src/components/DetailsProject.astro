@@ -1,0 +1,343 @@
+---
+
+const {title,date,begint,begin,descriptiont, description, adminData, asociadoData, imageAdmin, imageAsociado} = Astro.props;
+
+const IMAGES_TO_LOAD = 5
+
+import { getI18N } from "../i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+
+---
+
+<div class="text-secondary flex flex-col md:flex-row">
+<!--     <h1 class="text-center text-2xl py-6 md:text-6xl font-bold italic hover:text-primary-700 hover:underline  ">{title}</h1>
+ -->
+    <article class="w-full md:w-1/2  my-4 md:my-0">
+        <div class="h-1/3 content-center my-5">
+            <h1 class="text-2xl text-primary font-bold">{begint}</h1>
+            <p class="">{begin}</p>
+        </div>
+        <div class="h-1/3 content-center">            
+            <h1 class="text-2xl text-primary font-bold">{descriptiont}</h1>
+            <p class="">{description}</p>
+        </div>
+        <div class="h-1/3 content-center mt-5">
+            <h1 class="text-2xl text-primary font-bold">{i18n.Projects.paeta.text3_title}</h1>
+            <p>{i18n.Projects.smartcoop.text3}</p>
+            <ul class="list-disc list-inside mx-7">
+                <li>Python</li>
+                <li>Flask</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>MySQL</li>
+            </ul>
+        </div>
+        
+    </article>
+
+    <article class="w-full md:w-1/2 p-8">
+        
+        <div class="mb-10">
+            <div>
+                <p>
+                    {adminData}
+                </p>
+    
+            </div>
+    
+            <div id="admin-gallery" class="relative w-full mt-8 grid grid-cols-[1fr_0.5fr_0.5fr] gap-3">
+                {
+                    imageAdmin.map((url, index) => (
+                        <a
+                        class:list={[
+                            " aspect-square transition hover:scale-105 ",
+                            { "row-span-2": index === 0 },
+                        ]}
+                        href={url}
+                        title={`Abrir imagen ${index} de la galería de ${title}`}
+                        >
+                        <figure class="h-full w-full">
+                            <picture class="block h-full w-full">
+                                <img
+                                loading="eager"
+                                decoding="async"
+                                class="aspect-square h-full w-full rounded object-cover object-top"
+                                alt={`Imagen de la galería de fotos de ${title}`}
+                                src={url}
+                                />
+                                </picture>
+                                </figure>
+                                </a>
+                                ))
+                            }
+                <dialog
+                id="admin-lightbox"
+                class="h-auto max-h-[80%] w-auto max-w-[80%] items-center justify-center overflow-hidden bg-transparent backdrop:bg-black/70 lg:max-h-[90%] lg:w-full lg:max-w-[90%]"
+                >
+                <button
+                type="button"
+                class="fixed right-8 top-8 rounded bg-black/60 p-4 text-white transition hover:scale-110 hover:bg-accent hover:text-black"
+                >
+                        <svg class="size-5" aria-hidden="true" fill="none" viewBox="0 0 14 14">
+                            <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"></path>
+                        </svg>
+                    </button>
+                    <div class="mx-auto flex h-full w-full items-center justify-center gap-5">
+                        <div class="absolute h-full w-full bg-transparent" data-dialog-bg></div>
+                        <button
+                        data-btn-prev
+                        class="group z-10 hidden transition hover:scale-125 motion-reduce:transition-none motion-reduce:hover:scale-100 lg:block"
+                        >
+                        <img
+                        class="size-16 opacity-85 group-hover:opacity-100"
+                        src="https://cdn.lavelada.dev/ui/left-arrow.svg"
+                        alt="Imagen anterior"
+                        title="Ir a la imagen anterior"
+                        />
+                    </button>
+                    <img
+                    loading="eager"
+                    decoding="async"
+                    class="gallery-img z-10 h-full rounded object-contain object-center"
+                    alt={`Imagen de la galería de fotos de ${title}`}
+                    src={imageAdmin[0]}
+                    />
+                    <button
+                    data-btn-next
+                    class="group z-10 hidden transition hover:scale-125 motion-reduce:transition-none motion-reduce:hover:scale-100 lg:block"
+                    >
+                    <img
+                    class="size-16 rotate-180 opacity-85 group-hover:opacity-100"
+                                src="https://cdn.lavelada.dev/ui/left-arrow.svg"
+                                alt="Imagen siguiente"
+                                title="Ir a la imagen siguiente"
+                            />
+                        </button>
+                    </div>
+                </dialog>
+            </div>
+            
+        </div>
+
+            
+    <div >
+        <div>
+            <p>
+                {asociadoData}
+            </p>
+
+        </div>
+
+        <div id="aso-gallery" class="relative w-full mt-8 grid grid-cols-[1fr_0.5fr_0.5fr] gap-3">
+            {
+                imageAsociado.map((url, index) => (
+                    <a
+                    class:list={[
+                        " aspect-square transition hover:scale-105 ",
+                        { "row-span-2": index === 0 },
+                    ]}
+                    href={url}
+                    title={`Abrir imagen ${index} de la galería de ${title}`}
+                    >
+                    <figure class="h-full w-full">
+                        <picture class="block h-full w-full">
+                            <img
+                            loading="eager"
+                            decoding="async"
+                            class="aspect-square h-full w-full rounded object-cover object-top"
+                            alt={`Imagen de la galería de fotos de ${title}`}
+                            src={url}
+                            />
+                            </picture>
+                            </figure>
+                            </a>
+                            ))
+                        }
+            <dialog
+            id="aso-lightbox"
+            class="h-auto max-h-[80%] w-auto max-w-[80%] items-center justify-center overflow-hidden bg-transparent backdrop:bg-black/70 lg:max-h-[90%] lg:w-full lg:max-w-[90%]"
+            >
+            <button
+            type="button"
+            class="fixed right-8 top-8 rounded bg-black/60 p-4 text-white transition hover:scale-110 hover:bg-accent hover:text-black"
+            >
+                    <svg class="size-5" aria-hidden="true" fill="none" viewBox="0 0 14 14">
+                        <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"></path>
+                    </svg>
+                </button>
+                <div class="mx-auto flex h-full w-full items-center justify-center gap-5">
+                    <div class="absolute h-full w-full bg-transparent" data-dialog-bg></div>
+                    <button
+                    data-btn-prev
+                    class="group z-10 hidden transition hover:scale-125 motion-reduce:transition-none motion-reduce:hover:scale-100 lg:block"
+                    >
+                    <img
+                    class="size-16 opacity-85 group-hover:opacity-100"
+                    src="https://cdn.lavelada.dev/ui/left-arrow.svg"
+                    alt="Imagen anterior"
+                    title="Ir a la imagen anterior"
+                    />
+                </button>
+                <img
+                loading="lazy"
+                decoding="async"
+                class="gallery-img z-10 h-full rounded object-contain object-center"
+                alt={`Imagen de la galería de fotos de ${title}`}
+                src={imageAsociado[0]}
+                />
+                <button
+                data-btn-next
+                class="group z-10 hidden transition hover:scale-125 motion-reduce:transition-none motion-reduce:hover:scale-100 lg:block"
+                >
+                <img
+                class="size-16 rotate-180 opacity-85 group-hover:opacity-100"
+                            src="https://cdn.lavelada.dev/ui/left-arrow.svg"
+                            alt="Imagen siguiente"
+                            title="Ir a la imagen siguiente"
+                        />
+                    </button>
+                </div>
+            </dialog>
+        </div>
+        
+    </div>
+
+
+    </article>
+    
+
+
+
+
+
+
+
+
+    
+    <!-- <p>If you have any questions about the SmartCoop project, feel free to reach out to me. I would be happy to share more about the project and how it was built.</p> -->
+</div>
+
+<style>
+	#adm-lightbox img.gallery-img {
+		view-transition-name: lightbox-image;
+	}
+
+    #aso-lightbox img.gallery-img {
+		view-transition-name: lightbox-image;
+	}
+
+</style>
+
+<script>
+    // Función para mostrar la galería
+    const showGallery = (galleryId, lightboxId) => {
+        const $gallery = document.getElementById(galleryId);
+        const $lightbox = document.getElementById(lightboxId) as HTMLDialogElement;
+        if (!$gallery || !$lightbox) return;
+
+        const $links = $gallery.querySelectorAll("a");
+        const $close = $lightbox.querySelector("button");
+
+        const updateImg = (link) => {
+            const img = $lightbox.querySelector(".gallery-img") as HTMLImageElement;;
+            const newImg = link.querySelector("img");
+            if (img && newImg) img.src = newImg.src;
+        };
+
+        const close = () => {
+            $lightbox.close();
+        };
+
+        // Lógica para mostrar la imagen anterior
+        const showPrevImage = () => {
+            const current = $gallery.querySelector("a[data-current=true]");
+            const prev = (current.previousElementSibling || $gallery.querySelector("a:last-of-type")) as HTMLAnchorElement;
+            prev.click();
+        };
+
+        // Lógica para mostrar la siguiente imagen
+        const showNextImage = () => {
+            const current = $gallery.querySelector("a[data-current=true]") 
+            const next = (current.nextElementSibling?.nodeName === "A" 
+                ? current.nextElementSibling 
+                : $gallery.querySelector("a:first-of-type")) as HTMLElement;
+            next.click();
+        };
+
+        // Agregar eventos de clic para mostrar la imagen anterior o siguiente
+        document.addEventListener("click", (event) => {
+            if (!$lightbox.open) return;
+            const target = event.target as HTMLElement;
+            const isPrev = target.title.includes("anterior");
+            const isNext = target.title.includes("siguiente");
+            if (isPrev) {
+                showPrevImage();
+            }
+            if (isNext) {
+                showNextImage();
+            }
+        });
+
+        // Agregar eventos de teclado para mostrar la imagen anterior o siguiente
+        document.addEventListener("keydown", (event) => {
+            if (!$lightbox.open) return;
+
+            if (event.key === "Escape") {
+                close();
+            }
+
+            if (event.key === "ArrowRight") {
+                showNextImage();
+            }
+
+            if (event.key === "ArrowLeft") {
+                showPrevImage();
+            }
+        });
+
+        // Evento para cerrar la galería al hacer clic en el botón de cerrar
+        $close.addEventListener("click", close);
+
+        // Evento para cerrar la galería al hacer clic fuera de la misma
+        $lightbox.addEventListener("click", (event) => {
+            const $dialogBg = document.querySelector("[data-dialog-bg]");
+            const canClose = event.target === $dialogBg || event.target === $lightbox;
+            if (canClose) close();
+        });
+
+        // Evento para abrir la galería al hacer clic en un enlace de la misma
+        $links.forEach((link) =>
+            link.addEventListener("click", (event) => {
+                event.preventDefault();
+                $gallery.querySelector("a[data-current=true]")?.removeAttribute("data-current");
+                link.setAttribute("data-current", "true");
+                updateImg(link);
+                if (!$lightbox.open) {
+                    $lightbox.showModal();
+                }
+            })
+        );
+    };
+    
+
+    // Mostrar galería de administradores
+    showGallery("admin-gallery", "admin-lightbox");
+
+    // Mostrar galería de asociados
+    showGallery("aso-gallery", "aso-lightbox");
+
+
+</script>

@@ -1,83 +1,12 @@
 ---
-import Hero from "../components/Hero.astro";
-import Info from "../components/Info.astro";
-import Stack from "../components/Stack.astro";
-import Projects from "../components/Projects.astro";
-import AboutMe from "../components/AboutMe.astro";
+
 import Layout from "../layouts/layout.astro";
-import SectionContainer from "../components/SectionContainer.astro";
-import Experience from "../components/Experience.astro";
-import Briefcase from "../components/Icons/Briefcase.astro";
-import CodeIcon from "../components/Icons/Code.astro";
-import Badge from "../components/Badge.astro";
-import Icon from "../components/Icons/Icon.astro";
-import IconStack from "../components/Icons/IconStack.astro";
-import ProfileCheck from "../components/Icons/ProfileCheck.astro";
+import App from "../components/pages/index.astro";
 
 ---
 
-<Layout title="Home">
-  <SectionContainer id="home"  class="my-20  md:my-28">
-    <Hero>
-    </slot>
-  </Hero>
-  </SectionContainer>
+<Layout title="Portfolio">
 
-  <Info />
-
-  <SectionContainer id="experience" class="mt-8 ">
-    <h2
-      class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-secondary-100"
-    >
-      <Briefcase class="size-8" />
-      Work Experience
-    </h2>
-    <Experience />
-    <div class="text-center py-8" >
-      <!-- Cursos tomados -->
-      <h2 class=" text-secondary-100 text-2xl">Training | Courses </h2>
-      
-      <div class="flex gap-4 mb-4 justify-center pt-3">
-        
-        <Icon src="/DB_curso.png" alt="Curso DB Relacionales" link="/files/DB_certificado.pdf" />
-        <Icon src="/DB_curso.png" alt="Curso DB Relacionales" link="/files/DB_certificado.pdf" />
-
-      </div>
-      <a href="" class="text-gray hover:underline hover:text-primary-700">
-        Ver más en mi perfil de LinkedIn
-      </a>
-    </div>
-  </SectionContainer>
-
-  <SectionContainer id="projects" class="mt-6">
-    <h2
-      class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-secondary-100"
-    >
-      <CodeIcon class="size-8" />
-      Projects
-    </h2>
-    <Projects />
-  </SectionContainer>
-
-  <SectionContainer id="stack" class="mt-16">
-    <h2
-      class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-secondary-100"
-    >
-      <IconStack class="size-8" />
-      Frameworks & Tech
-    </h2>
-    <Stack />
-  </SectionContainer>
-
-  <SectionContainer id="about" class="mt-16">
-    <h2
-      class="flex items-center text-3xl font-semibold gap-x-8 text-secondary-100 mb-3"
-    >
-      <ProfileCheck class="size-8" />
-      About me
-    </h2>
-    <AboutMe />
-  </SectionContainer>
-
+  <App />
 
 </Layout>

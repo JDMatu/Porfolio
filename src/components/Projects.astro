@@ -2,16 +2,18 @@
 import Card from "./Card.astro";
 import Tailwind from "./Icons/Tailwind.astro";
 import Python from "./Icons/Python.astro";
+import Flask from "./Icons/Flask.astro";
+import MySQL from "./Icons/MySQL.astro";
+import JavaScript from "./Icons/JavaScript.astro"
 
-
-
-
-
+import { getI18N } from "../i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 
 const TAGS = {
   Python: {
     name: "Python",
-    class: "bg-[#FFFF0040] text-white",
+    class: "bg-[#003159] text-white",
     icon: Python,
   },
   TAILWIND: {
@@ -19,44 +21,65 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  Flask: {
+    name: "Flask",
+    class: "bg-[#003159] text-white",
+    icon: Flask,
+  },
+  MySQL: {
+    name:"MySQL",
+    class: "bg-[#003159] text-white",
+    icon: MySQL,
+  }, 
+  JavaScript:{
+    name: "JavaScript",
+    class: "bg-[#003159] text-white",
+    icon: JavaScript
+  }
 }
 
 ---
 
 <div class="flex flex-col gap-y-16">
-    
     <Card  
         title="SmartCoop"
-        description="Una aplicación web que permite a los usuarios gestionar sus proyectos de forma colaborativa. Los usuarios pueden crear proyectos, añadir tareas, asignarlas a otros usuarios y ver el progreso de las tareas. La aplicación también cuenta con un chat en tiempo real para que los usuarios puedan comunicarse entre ellos."
-        image="/files/smartcoop.png" 
+        description={i18n.Projects.description1}
+        image="/img/smartcoop/smartcoop.png" 
         tags={
             [
                 TAGS.Python,
-                TAGS.TAILWIND
+                TAGS.Flask,
+                TAGS.JavaScript,
+                TAGS.MySQL
             ]
 
         }
         link=""
         github=""
         ClassName="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0"
+        href="projects/smartcoop"
+        
     
     
     />
 
     <Card  
         title="Paeta"
-        description="Una aplicación web que permite a los usuarios gestionar sus proyectos de forma colaborativa. Los usuarios pueden crear proyectos, añadir tareas, asignarlas a otros usuarios y ver el progreso de las tareas. La aplicación también cuenta con un chat en tiempo real para que los usuarios puedan comunicarse entre ellos."
-        image="/files/smartcoop.png" 
+        description={i18n.Projects.description2}
+        image="/img/paeta/paeta.png" 
         tags={
             [
                 TAGS.Python,
-                TAGS.TAILWIND
+                TAGS.Flask,
+                TAGS.JavaScript,
+                TAGS.MySQL
             ]
 
         }
-        link="https:"
+        link=""
         github="https://github.com/jdmatu/paeta"
         ClassName="flex flex-col space-x-0 space-y-8 group md:flex-row-reverse md:space-x-8 md:space-y-0"
+        href="projects/paeta"
     
     
     />

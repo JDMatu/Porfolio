@@ -1,0 +1,50 @@
+---
+import SectionContainer from "../../components/SectionContainer.astro"
+import DetailsProject from "../../components/DetailsProject.astro"
+import IconSmartCoop from "../../components/Icons/IconSmartCoop.astro"
+
+import { getI18N } from "../../i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+---
+<SectionContainer id="home"  class="my-3  md:mt-10 text-secondary">
+    
+    <!-- <img src="/img/admin.png" alt="SmartCoop" class="h-96 mx-auto " transition:name="SmartCoop" /> -->
+    
+    <div class="">
+        <h1 class="text-center text-2xl py-6 md:text-6xl font-bold italic hover:text-primary-700 hover:underline  ">SmartCoop</h1>
+        <img src="/img/smartcoop/smartcoop.png" alt="SmartCoop" class="h-60 md:h-96 mx-auto w-fit border-2 rounded-md border-teal-100" transition:name="SmartCoop" />
+    </div>
+    <DetailsProject 
+        title="SmartCoop" 
+        date="2021" 
+        begint={i18n.Projects.smartcoop.text1_title}
+        begin={i18n.Projects.smartcoop.text1}
+        imageAdmin={[
+            "/img/smartcoop/adm/panel_admin.png",
+            "/img/smartcoop/adm/edit_pag.png",
+            "/img/smartcoop/adm/calendar.png",
+            "/img/smartcoop/adm/add_votes.png",
+            "/img/smartcoop/adm/edit_modal.png",
+            
+        ]}
+        imageAsociado={[
+            "/img/smartcoop/aso/home.png",
+            "/img/smartcoop/aso/votaciones.png",
+            "/img/smartcoop/aso/actividades.png",
+            "/img/smartcoop/aso/ahorro.png",
+            "/img/smartcoop/aso/ventas.png",
+        ]}
+        descriptiont={i18n.Projects.smartcoop.text2_title}
+        description={i18n.Projects.smartcoop.text2}
+        adminData={i18n.Projects.smartcoop.text5}
+        asociadoData={i18n.Projects.smartcoop.text6}
+        />
+        
+        <div class="w-full md:w-5/6 md:mt-20">
+            <h1 class="text-primary">{i18n.Projects.smartcoop.text4_title}</h1>
+            <p>{i18n.Projects.smartcoop.text4}</p>
+        </div>
+    </SectionContainer>
+

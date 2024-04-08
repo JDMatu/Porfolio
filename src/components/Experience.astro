@@ -1,20 +1,25 @@
 ---
+
+import { getI18N } from "../i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
 import ExperienceItem from "./ExperienceItem.astro"
 const EXPERIENCIE = [
   {
-    date: "March 1, 2023 | June 12, 2023",
-    title: "Full-Stack Developer",
-    company: "PAETA",
+    date: i18n.Experience[1].date,
+    title:  i18n.Experience[1].title,
+    company:  i18n.Experience[1].company,
     description:
-      "In charge of developing the PAETA application for the Agropecuario San Carlos School. I led the integration of a relational database in conjunction with the Flask web framework, culminating in the effective implementation of the application on a local server to facilitate internal communication and optimize system operability.",
-    link: "#projects",
+      i18n.Experience[1].description,
+    link: i18n.Experience[1].link,
   },
   {
-    date: "June 26, 2023 | June 30, 2023",
-    title: "Technical Internship",
-    company: "Golabs",
+    date: i18n.Experience[2].date,
+    title: i18n.Experience[2].title,
+    company: i18n.Experience[2].company,
     description:
-      "During my internship at Golabs, I focused on testing popular Headless CMSs such as Strapi and Contentful, as well as their integration with the Next.js framework. This internship allowed me to acquire communication skills and participate effectively in team projects.",
+      i18n.Experience[2].description,
   },
 ]
 ---

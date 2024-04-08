@@ -9,6 +9,11 @@ interface Props {
 }
 
 const { title, company, description, link, date } = Astro.props
+
+import { getI18N } from "../i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
 ---
 
 <div
@@ -30,7 +35,7 @@ const { title, company, description, link, date } = Astro.props
     {
       link && (
       <a href={link} role="link" class="inline-flex items-center text-lg font-medium text-primary   hover:underline">
-        Read More
+        {i18n.btn[1]}
         <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-5 icon icon-tabler icon-tabler-chevron-right"

@@ -1,5 +1,8 @@
 ---
 
+import { getI18N } from "../i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 
 ---
 
@@ -7,7 +10,7 @@
     <div class="flex flex-col md:flex-row gap-4 justify-around py-3">
         
         <div class="bg-fondo w-full rounded-lg border-2 border-primary">
-            <h2 class="text-lg mx-3 mb-2 ">Programming Languages</h2>
+            <h2 class="text-lg mx-3 mb-2 ">{i18n.Frameworks[1]}</h2>
             <div class="flex flex-wrap justify-center">
                 <span class="text-lg mx-2 text-secondary-100 hover:transition ease-in-out delay-75 hover:underline hover:text-primary">Python</span>
                 <span class="text-lg mx-2 text-secondary-100 hover:transition ease-in-out delay-75 hover:underline hover:text-primary">JavaScript</span>
@@ -17,7 +20,7 @@
         </div>
 
         <div class="bg-fondo w-full rounded-lg border-2 border-primary">
-            <h2 class="text-lg mx-3 mb-2">Libraries & Frameworks</h2>
+            <h2 class="text-lg mx-3 mb-2">{i18n.Frameworks[2]}</h2>
             <div class="flex flex-wrap justify-center">
                 <span class="text-lg mx-2 text-secondary-100 hover:transition ease-in-out delay-75 hover:underline hover:text-primary">Flask</span>
                 <span class="text-lg mx-2 text-secondary-100 hover:transition ease-in-out delay-75 hover:underline hover:text-primary">Pandas</span>
@@ -28,7 +31,7 @@
         </div>
         
         <div class="bg-fondo w-full rounded-lg border-2 border-primary">
-            <h2 class="text-lg mx-3 mb-2">Tools & Platforms</h2>
+            <h2 class="text-lg mx-3 mb-2">{i18n.Frameworks[3]}</h2>
             <div class="flex flex-wrap justify-center">
                 <span class="text-lg mx-2 text-secondary-100 hover:transition ease-in-out delay-75 hover:underline hover:text-primary">MySQL</span>
                 <span class="text-lg mx-2 text-secondary-100 hover:transition ease-in-out delay-75 hover:underline hover:text-primary">PostgreSQL</span>
