@@ -12,5 +12,6 @@ export default defineConfig({
       prefixDefaultLocale: false
   },
   fallbackLocale: "en"
-  }
+  },
+  site: 'https://porfolio-gamma-nine.vercel.app/'
 });

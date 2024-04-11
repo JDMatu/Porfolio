@@ -96,7 +96,9 @@
             "2":"mi mayor logro hasta la fecha es SmartCoop, un software especializado diseñado para cooperativas.",
             "3":" Cuenta con un catálogo completo, manejo de tres tipos de usuarios, módulos de contabilidad y módulos de ventas gestionados por administradores, junto con",
             "4":" más de 12 páginas dinámicas."
-        } 
+        },
+        "reference":"Referencias "
+
     },
     "btn":{
         "1":"Leer Más",

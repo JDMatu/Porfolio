@@ -2,13 +2,16 @@
 import SectionContainer from "../../components/SectionContainer.astro"
 import DetailsProject from "../../components/DetailsProject.astro"
 
+import LinkButton from "../Icons/LinkButton.astro";
+import GitHub from "../Icons/GitHub.astro";
+
 import { getI18N } from "../../i18n";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
 ---
 
-<SectionContainer id="home"  class="my-3  md:my-10 text-secondary">
+<SectionContainer id="paeta"  class="my-3 md:mt-0 text-secondary">
     
     <div class="">
         <h1 class="text-center text-2xl py-6 md:text-6xl font-bold italic hover:text-primary-700 hover:underline  ">PAETA</h1>
@@ -42,7 +45,12 @@ const i18n = getI18N({ currentLocale });
         
         <div class="w-full md:w-1/2 md:mt-10">
             <h1 class="text-primary">{i18n.Projects.paeta.text4_title}</h1>
-            <p>{i18n.Projects.paeta.text4}</p>
+            <p class="mb-2">{i18n.Projects.paeta.text4}</p>
+            <LinkButton href="https://github.com/jdmatu/paeta">
+                <GitHub class="size-6" />
+                Code
+                
+            </LinkButton>
         </div>
 
     </SectionContainer>
