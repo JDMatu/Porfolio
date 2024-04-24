@@ -3,6 +3,7 @@ import SocialPill from "./SocialPill.astro";
 import MailIcon from "./Icons/MailIcon.astro";
 import LinkedInIcon from "./Icons/LinkedInIcon.astro";
 import GitHub from "./Icons/GitHub.astro";
+import CV from "./Icons/CV.astro";
 
 import { getI18N } from "../i18n";
 const { currentLocale } = Astro;
@@ -49,7 +50,7 @@ const i18n = getI18N({ currentLocale });
             </li>
             <li class="md:my-2">
                 <SocialPill href="/files/Resume_MatuDev.pdf">
-                    <LinkedInIcon class="size-4" />
+                    <CV class="size-4 fill-primary-700" />
                     <span >{i18n.btn[3]}</span>
                 </SocialPill>
             </li>
