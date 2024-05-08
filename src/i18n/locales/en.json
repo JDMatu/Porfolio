@@ -93,17 +93,17 @@
             "5":"data analysis, data management, and machine learning."
         },
         "parragraph3":{
-            "1":"I have experience in web development, and",
-            "2":"my greatest achievement to date is SmartCoop, specialized software designed for cooperatives.",
-            "3":" It features a comprehensive catalog, handling three types of users, accounting modules, and sales modules managed by administrators, along with",
-            "4":" over 12 dynamic pages."
+            "1":"I have experience in web development, database management, and version control.",
+            "2":"I am constantly open to exploring new technologies",
+            "3":" and programming approaches to continue growing and tackling challenges",
+            "4":" with creativity and determination."
         },
         "reference":"References"
     },
     "btn":{
         "1":"Read More",
         "2":"View Projects",
-        "3":"Donwload CV"
+        "3":"Download CV"
 
     }
 }
