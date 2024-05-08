@@ -16,7 +16,10 @@ export default {
 			fontFamily: {
 				
 			},
+			
 		},
 	},
-	plugins: [],
+	plugins: [
+		
+	],
 }
