@@ -1,7 +1,5 @@
 ---
 import Footer from '../components/Footer.astro';
-import { ViewTransitions } from 'astro:transitions';
-
 const {pageTitle} = Astro.props;
 
 const { currentLocale } = Astro;
@@ -17,7 +15,7 @@ const { currentLocale } = Astro;
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 		<meta name="description" content="Explore my portfolio showcasing my programming experience across various projects, with a future focus on Data Science and Machine Learning.">
-		<ViewTransitions />
+		
 	</head>
 	<body >
 
