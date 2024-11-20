@@ -1,47 +1,22 @@
-# Astro Starter Kit: Minimal
+# 🌟 My Personal Portfolio
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Welcome to my personal portfolio! This repository showcases some of the projects I've worked on, along with the skills and experiences I've gained as a software developer.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## 🚀 About Me
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+👋 Hi, I'm Juan Diego Matute from Costa Rica. I am passionate about data and implementing models to perform specific tasks with it. I'm constantly learning and improving my skills in algorithm design, web application development, and the fields of Machine Learning and Data Science. My motivation is to overcome challenges and use software to make a positive impact on society.
 
-## 🚀 Project Structure
+## 🚀 Skills and Technologies
 
-Inside of your Astro project, you'll see the following folders and files:
+- Proficient in Python, experienced with libraries such as NumPy, Pandas, Matplotlib. Currently learning Scikit-learn and TensorFlow.  
+- Knowledgeable in web development with JS frameworks and Flask.  
+- Familiar with version control tools like Git | GitHub.  
+- Basic knowledge of SQL and relational databases.  
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## 📬 Contact
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+If you'd like to connect with me, feel free to reach out:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- ✉️ **Email**: [juandiegomatute11@gmail.com](mailto:juandiegomatute11@gmail.com)  
+- 💼 **LinkedIn**: [linkedin.com/in/matudev](https://linkedin.com/in/matudev)  
+- 📞 **Phone**: (+506) 8949-1491  
